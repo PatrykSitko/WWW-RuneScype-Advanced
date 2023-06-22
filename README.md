@@ -1,4 +1,4 @@
-# java-react-template
+# Create a stunning native web app.
 
 ## how to run this script:
 - Terminal: mvn clean package
