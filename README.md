@@ -1,6 +1,9 @@
 # Create a stunning native web app.
 
+Use JavaScript & Python inside of your front-end application!
+
 ## how to run this script:
+
 - Terminal: mvn clean package
 - Terminal: ./mvnw spring-boot:run -Pprod
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { PyScriptProvider, PyScript } from "pyscript-react";
 
 const mapStateToProps = ({ state }) => ({
   csrfToken: state.cookie.csrfToken,
@@ -7,13 +8,13 @@ const mapStateToProps = ({ state }) => ({
   authenticationToken: state.cookie["authentication-token"],
 });
 
-const mapDispatchToProps = () => ({
-});
+const mapDispatchToProps = () => ({});
 
-function LandingPage({
-}) {
+function LandingPage({}) {
   return (
-    <>Hello World!</>
+    <PyScriptProvider>
+      <PyScript>display("Hello world!")</PyScript>
+    </PyScriptProvider>
   );
 }
 
