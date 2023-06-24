@@ -1,6 +1,6 @@
 # Create a stunning native web app.
 
-Use JavaScript & Python inside of your front-end application!
+Use JavaScript & Python inside of your front-end Single Page Application!
 
 ## how to run this script:
 
