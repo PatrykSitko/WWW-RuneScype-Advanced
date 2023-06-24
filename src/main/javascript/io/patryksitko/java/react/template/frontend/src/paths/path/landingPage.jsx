@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { PyScriptProvider, PyScript } from "pyscript-react";
+import { PyScript } from "pyscript-react";
 
 const mapStateToProps = ({ state }) => ({
   csrfToken: state.cookie.csrfToken,
@@ -11,11 +11,7 @@ const mapStateToProps = ({ state }) => ({
 const mapDispatchToProps = () => ({});
 
 function LandingPage({}) {
-  return (
-    <PyScriptProvider>
-      <PyScript>display("Hello world!")</PyScript>
-    </PyScriptProvider>
-  );
+  return <PyScript>display("Hello world!")</PyScript>;
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LandingPage);
